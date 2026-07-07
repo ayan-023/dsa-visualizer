@@ -1,7 +1,7 @@
 let stack = []
 
 function render() {
-    const container = Document.getElementById('stackContainer');
+    const container = document.getElementById('stackContainer');
     container.innerHtml='';
     
     stack.forEach((value, index)=>{
@@ -17,7 +17,7 @@ function render() {
 }
 
 function pushValue() {
-    const input = document.getElementsById('valueInput');
+    const input = document.getElementById('valueInput');
     if(input.value === '') return;
 
     stack.push(Number(input.value));
