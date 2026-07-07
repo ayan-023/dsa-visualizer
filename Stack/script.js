@@ -1,19 +1,20 @@
-let stack = []
+let stack = [];
 
 function render() {
     const container = document.getElementById('stackContainer');
-    container.innerHtml='';
+    container.innerHTML='';
     
-    stack.forEach((value, index)=>{
+    stack.forEach((value, index) => {
         const box= document.createElement('div');
         box.className='stack-box';
         box.textContent=value;
 
-        if (index === stack.length -1){
+        if (index === stack.length - 1){
             box.classList.add('top')
         }
-        container.appendChiled(box);
+        container.appendChild(box);
     });
+    document.getElementById('sizeLabel').textContent = `size: ${stack.length}`;
 }
 
 function pushValue() {
@@ -32,3 +33,4 @@ function popValue() {
 }
 
 render();
+
