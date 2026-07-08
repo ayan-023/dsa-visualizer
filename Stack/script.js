@@ -1,23 +1,24 @@
-let stack = []
+let stack = [];
 
 function render() {
-    const container = Document.getElementById('stackContainer');
-    container.innerHtml='';
+    const container = document.getElementById('stackContainer');
+    container.innerHTML='';
     
-    stack.forEach((value, index)=>{
+    stack.forEach((value, index) => {
         const box= document.createElement('div');
         box.className='stack-box';
         box.textContent=value;
 
-        if (index === stack.length -1){
+        if (index === stack.length - 1){
             box.classList.add('top')
         }
-        container.appendChiled(box);
+        container.appendChild(box);
     });
+    document.getElementById('sizeLabel').textContent = `size: ${stack.length}`;
 }
 
 function pushValue() {
-    const input = document.getElementsById('valueInput');
+    const input = document.getElementById('valueInput');
     if(input.value === '') return;
 
     stack.push(Number(input.value));
@@ -32,3 +33,4 @@ function popValue() {
 }
 
 render();
+
