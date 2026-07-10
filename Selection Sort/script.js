@@ -68,3 +68,11 @@ async function selectionSort() {
     }
     render()
 }
+
+function resetInput() {
+  arr = [];
+
+  document.getElementById("inputValue").value = '';
+  document.getElementById("barscontainer").innerHTML = '';
+  render();
+}
