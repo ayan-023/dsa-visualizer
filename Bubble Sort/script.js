@@ -60,3 +60,11 @@ async function bubbleSort() {
   }
   render();
 }
+
+function resetInput() {
+  arr=[];
+
+  document.getElementById("inputValue").value='';
+  document.getElementById("barscontainer").innerHTML='';
+  render();
+}
