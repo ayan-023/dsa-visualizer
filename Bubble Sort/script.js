@@ -9,7 +9,7 @@ function loadArray() {
 }
 
 
-function render(comparing = [], swapped = [], sorted = [] ) {
+function render(comparing = [], swapped = [], sorted = []) {
   const container = document.getElementById('barscontainer');
   container.innerHTML = '';
   const maxValue = Math.max(...arr);
@@ -30,8 +30,8 @@ function render(comparing = [], swapped = [], sorted = [] ) {
     if (swapped.includes(index)) {
       bar.classList.add("swapped");
     }
-        if (sorted.includes(index)) {
-        bar.classList.add("sorted");
+    if (sorted.includes(index)) {
+      bar.classList.add("sorted");
     }
     container.appendChild(bar);
   });
@@ -62,9 +62,9 @@ async function bubbleSort() {
 }
 
 function resetInput() {
-  arr=[];
+  arr = [];
 
-  document.getElementById("inputValue").value='';
-  document.getElementById("barscontainer").innerHTML='';
+  document.getElementById("inputValue").value = '';
+  document.getElementById("barscontainer").innerHTML = '';
   render();
 }
