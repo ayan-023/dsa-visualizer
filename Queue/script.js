@@ -59,8 +59,8 @@ function dequeueValue() {
 function resetInput() {
   queue = [];
 
-  document.getElementById("inputValue").value = '';
-  document.getElementById("queue-box").innerHTML = '';
+  document.getElementById("valueInput").value = '';
+  document.getElementById('queue-container').innerHTML = '';
   Render();
 }
 
