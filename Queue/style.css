@@ -9,9 +9,9 @@ body {
     min-height: 100vh;
     background-color: #faf9f7;
     background-image:
-        linear-gradient(to right, #e5e7eb 1px, transparent 1px),
-        linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
-    background-size: 24px 24px;
+        linear-gradient(to right, #e6e7e2 1px, transparent 1px),
+        linear-gradient(to bottom, #e6e7e2 1px, transparent 1px);
+    background-size: 28px 28px;
 
 }
 
