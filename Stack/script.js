@@ -38,8 +38,8 @@ function popValue() {
 function resetInput() {
   stack = [];
 
-  document.getElementById("inputValue").value = '';
-  document.getElementById("stack-box").innerHTML = '';
+  document.getElementById("valueInput").value = '';
+  document.getElementById('stackContainer').innerHTML = '';
   render();
 }
 
