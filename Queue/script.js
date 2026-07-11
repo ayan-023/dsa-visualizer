@@ -56,4 +56,12 @@ function dequeueValue() {
     }, 300);
 }
 
+function resetInput() {
+  queue = [];
+
+  document.getElementById("inputValue").value = '';
+  document.getElementById("queue-box").innerHTML = '';
+  Render();
+}
+
 Render();
